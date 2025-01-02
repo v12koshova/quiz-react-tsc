@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/quiz-react-tsc/static/js/main.b648c508.js",
+    "static/media/bg.jpg": "/quiz-react-tsc/static/media/bg.c866d607938d6048d5e1.jpg",
+    "index.html": "/quiz-react-tsc/index.html",
+    "main.b648c508.js.map": "/quiz-react-tsc/static/js/main.b648c508.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b648c508.js"
+  ]
+}
