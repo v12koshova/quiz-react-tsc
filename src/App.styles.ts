@@ -31,19 +31,33 @@ export const Wrapper = styled.div`
   > p {
     color: #fff;
   }
-
+  .error {
+    color: red;
+  }
   .select {
     background-image: linear-gradient(180deg, #fff, #87f1ff);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     height: 40px;
     padding: 0 40px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px #0085a3);
+    border-radius: 10px;
+    width: 100%;
   }
-  .select:first-of-type {
-    border-radius: 10px 0px 0px 10px;
-  }
-  .select:last-of-type {
-    border-radius: 0px 10px 10px 0px;
+
+  @media (min-width: 540px) {
+    .select {
+      width: fit-content;
+    }
+    .select:first-of-type {
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    .select:last-of-type {
+      border-radius: 0px 10px 10px 0px;
+      
+    }
   }
 
   .score {
@@ -66,10 +80,10 @@ export const Wrapper = styled.div`
     text-align: center;
     margin: 20px;
   }
-
+  
   .start, .next {
-    cursor: pointer;
     background: linear-gradient(180deg, #ffffff, #ffcc91);
+    cursor: pointer;
     border: 2px solid #d38558;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -80,5 +94,20 @@ export const Wrapper = styled.div`
 
   .start {
     max-width: 200px;
+  }
+
+  .start:disabled {
+    z-index: -1;
+    animation: disabled 5s ease 0s;
+  }
+
+
+  @keyframes disabled {
+    90% {  
+      color:rgb(154, 154, 154);
+    }
+    100% {
+      color: initial;
+    }
   }
 `;

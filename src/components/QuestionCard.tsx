@@ -1,6 +1,5 @@
 import React, { MouseEvent } from 'react'
-import { TOTAL_NUMBER } from '../utils'
-import { QuestionType } from '../App'
+import { QuestionType, TOTAL_NUMBER } from '../utils'
 import { ButtonWrapper, Wrapper } from './QuestionCard.styles'
 
 type PropsType = {
